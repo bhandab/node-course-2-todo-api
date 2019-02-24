@@ -1,4 +1,7 @@
-const MongoClient = require('mongodb').MongoClient;
+//const MongoClient = require('mongodb').MongoClient;
+/*These two lines do the same thing. The line below is an instance of
+destructuring*/
+const{MongoClient} = require('mongodb');
 
 MongoClient.connect('mongodb://localhost:27017/TodoApp',(err,db)=>{
     if (err){
