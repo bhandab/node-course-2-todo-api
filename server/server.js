@@ -9,7 +9,7 @@ var {User} = require('./models/user');
 
 var app = express();
 
-var port = process.eventNames.PORT || 3000
+var port = process.env.PORT || 3000
 
 //app.use takes the middleware; bodyParser, a third party middleware in this case 
 app.use(bodyParser.json());
