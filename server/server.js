@@ -1,3 +1,5 @@
+require('./config/config');
+
 const _ = require('lodash');
 const express = require('express');
 const bodyParser = require('body-parser');
@@ -11,7 +13,7 @@ var {User} = require('./models/user');
 
 var app = express();
 
-var port = process.env.PORT || 3000
+var port = process.env.PORT;
 
 //app.use takes the middleware; bodyParser, a third party middleware in this case 
 app.use(bodyParser.json());
